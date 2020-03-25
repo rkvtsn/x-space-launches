@@ -2,7 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import config from './config.json'
+import VueConfig from './addons/config'
+import './styles/index.scss'
 
+Vue.use(VueConfig, config)
 Vue.config.productionTip = false
 
 new Vue({
